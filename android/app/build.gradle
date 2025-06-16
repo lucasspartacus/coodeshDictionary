@@ -1,0 +1,54 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id 'com.google.gms.google-services'
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace = "com.example.english_words_app"
+    compileSdkVersion flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        compileSdkVersion 34
+        applicationId = "com.example.english_words_app"
+        minSdk 21
+        targetSdkVersion 34
+        multiDexEnabled true
+         versionCode 1
+    versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            shrinkResources false
+            signingConfig = signingConfigs.debug
+        }
+    }
+    
+    dependencies {
+        implementation 'androidx.multidex:multidex:2.0.1'
+        
+    } 
+
+}
+
+flutter {
+    source = "../.."
+}
+
+apply plugin: 'com.google.gms.google-services'

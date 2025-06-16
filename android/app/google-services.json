@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "472386399108",
+    "project_id": "englishwords-791fd",
+    "storage_bucket": "englishwords-791fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472386399108:android:d09101b8b61010e2a5cbd1",
+        "android_client_info": {
+          "package_name": "com.example.english_words_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjRJ2Rl5s6NN3dIAlYvUtTamG-SkOnJ90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
